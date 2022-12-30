@@ -6,6 +6,8 @@ import AutoDismissAlert from './components/AutoDismissAlert/AutoDismissAlert'
 import Header from './components/Header/Header'
 import IndexArticles from './routes/IndexArticles.js'
 import NewArticle from './routes/NewArticle.js'
+import ViewArticle from './routes/ViewArticle.js'
+import UpdateArticle from './routes/UpdateArticle.js'
 
 class App extends Component {
   constructor (props) {
@@ -50,6 +52,12 @@ class App extends Component {
           )} />
           <Route exact path='/new-article' render={() => (
             <NewArticle msgAlert={this.msgAlert} />
+          )} />
+          <Route exact path='/article/:id' render={() => (
+            <ViewArticle msgAlert={this.msgAlert} />
+          )} />
+          <Route exact path='/article/:id/update' render={() => (
+            <UpdateArticle msgAlert={this.msgAlert} />
           )} />
         </main>
       </Fragment>

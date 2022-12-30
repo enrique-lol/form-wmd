@@ -22,7 +22,7 @@ class CreateArticle extends Component {
     const { article } = this.state
     newArt(article)
       // .then(() => this.setState({ article: res.data.article }))
-      .then(res => this.setState({ createdId: res.data.article.id }))
+      .then(res => this.setState({ createdId: res.data.article._id }))
       .then(msgAlert({
         heading: 'Success!',
         message: 'Your article has been created ',
