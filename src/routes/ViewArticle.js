@@ -53,7 +53,41 @@ class ViewArticle extends Component {
         <Fragment>
           <div>
             <h1>{article.title}</h1>
-            <h2>{article.text}</h2>
+            <p>{article.author}</p>
+            <p>{article.date}</p>
+            <p>thumbnail: {article.thumbnailUrl}</p>
+            <p>{article.intro}</p>
+            <h2>{article.heading1}</h2>
+            <p>image: {article.imageUrl1}</p>
+            <p>{article.body1}</p>
+            <h2>{article.heading2}</h2>
+            <p>image: {article.imageUrl2}</p>
+            <p>{article.body2}</p>
+            <h2>{article.heading3}</h2>
+            <p>image: {article.imageUrl3}</p>
+            <p>{article.body3}</p>
+            <h2>{article.heading4}</h2>
+            <p>image: {article.imageUrl4}</p>
+            <p>{article.body4}</p>
+            <h2>{article.heading5}</h2>
+            <p>image: {article.imageUrl5}</p>
+            <p>{article.body5}</p>
+            <h2>{article.heading6}</h2>
+            <p>image: {article.imageUrl6}</p>
+            <p>{article.body6}</p>
+            <h2>{article.heading7}</h2>
+            <p>image: {article.imageUrl7}</p>
+            <p>{article.body7}</p>
+            <h2>{article.heading8}</h2>
+            <p>image: {article.imageUrl8}</p>
+            <p>{article.body8}</p>
+            <h2>{article.heading9}</h2>
+            <p>image: {article.imageUrl9}</p>
+            <p>{article.body9}</p>
+            <h2>{article.heading10}</h2>
+            <p>image: {article.imageUrl10}</p>
+            <p>{article.body10}</p>
+            <h3>{article.outro}</h3>
             <button onClick={this.deleteArticle}>Delete 1</button>
             <button><Link to={`/article/${article._id}/update/`}>Update</Link></button>
           </div>
